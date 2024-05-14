@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { PrevClick } from "./PrevClick";
 import { NextClick } from "./NextClick";
-import { DotComponent } from "./dot";
+import { DotComponent } from "./DotComponent";
 
 export const images = [
   { src: "/carousel/step-leave-type 1.svg", alt: "Image 1" },
