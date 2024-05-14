@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { PrevClick } from "./PrevClick";
 import { NextClick } from "./NextClick";
-import { Dot } from "./dot";
+import { DotComponent } from "./dot";
 
 export const images = [
   { src: "/carousel/step-leave-type 1.svg", alt: "Image 1" },
@@ -95,7 +95,7 @@ export const CarouselBar = () => {
             className={`pt-[30px] md:pt-[0]`}
           />
         </div>
-        <Dot setProgressStyle={setProgressStyle} activeStep={activeStep} setActiveStep={setActiveStep} setActiveImage={setActiveImage} dots={dots}/>
+        <DotComponent setProgressStyle={setProgressStyle} activeStep={activeStep} setActiveStep={setActiveStep} setActiveImage={setActiveImage} dots={dots}/>
       </div>
       <NextClick progress={progress} setProgress={setProgress}  setProgressStyle={setProgressStyle} activeStep={activeStep} setActiveStep={setActiveStep} setActiveImage={setActiveImage}/>
     </div>

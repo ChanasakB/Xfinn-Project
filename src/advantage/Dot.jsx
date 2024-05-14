@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export const Dot = ({setProgressStyle,activeStep,setActiveStep,setActiveImage,dots}) => {
+export const DotComponent = ({setProgressStyle,activeStep,setActiveStep,setActiveImage,dots}) => {
   const handleDotClick = (id) => {
     setTimeout(()=>{
       setActiveStep(id);
