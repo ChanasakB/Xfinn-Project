@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Anuphan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff6ec;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@layer utilities {
+  .animation-0 {
+    animation-name: animation-3;
+    animation-duration: 1s;
+    width: 100%;
+  }
+
+  .animation-1-2 {
+    animation-name: animation-1;
+    animation-duration: 1s;
+    width: 50%;
+  }
+
+  .animation-full {
+    animation-name: animation-2;
+    animation-duration: 1s;
+    width: 100%;
+  }
+  @keyframes animation-1 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes animation-2 {
+    0% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes animation-3 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .animation-1-2-revert {
+    animation-name: animation-1-revert;
+    animation-duration: 1s;
+    width: 0;
+  }
+
+  .animation-full-revert {
+    animation-name: animation-2-revert;
+    animation-duration: 1s;
+    width: 50%;
+  }
+
+  .animation-0-revert {
+    animation-name: animation-3-revert;
+    animation-duration: 1s;
+    width: 0;
+  }
+  @keyframes animation-1-revert {
+    0% {
+      width: 50%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  @keyframes animation-2-revert {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes animation-3-revert {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}
