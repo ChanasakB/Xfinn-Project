@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  x-finn:
+      # image: 59080500231/docker-react:1.0
+      container_name: x-finn
+      build:
+        context: .
+        dockerfile: Dockerfile
+      volumes:
+        - ./:/app
+        - /app/node_modules
+        - /app/.next
+      restart: always
+      ports:
+        - '3000:3000'
